@@ -1,0 +1,66 @@
+.ToolBar {
+  width: 60px;
+  min-width: 60px;
+  background: rgba(238, 242, 248, 1);
+  box-shadow: 1px 0px 0px 0px rgba(239, 239, 240, 1);
+  position: relative;
+  :global {
+    .name {
+      position: absolute;
+      top: 80px;
+      text-align: center;
+      width: 100%;
+    }
+    .icon {
+      background-color: #ddd;
+      border-radius: 50%;
+      position: absolute;
+      top: 40px;
+      text-align: center;
+      height: 36px;
+      line-height: 36px;
+      width: 36px;
+      margin-left: 12px;
+    }
+    .menu {
+      position: absolute;
+      top: 130px;
+      width: 100%;
+    }
+    .bottom {
+      bottom: 20px;
+      z-index: 100;
+      position: absolute;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      width: 100%;
+      &:hover {
+        > .right-button {
+          margin-top: 10px;
+          display: block;
+
+          line-height: 30px;
+        }
+      }
+      .right-button {
+        z-index: 10000;
+        display: none;
+        position: absolute;
+        color: #fff;
+        left: 60px;
+        width: 60px;
+        top: -20px;
+        background: rgba(0, 0, 0, 0.75);
+        > div {
+          cursor: pointer;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          &:hover {
+            background: #000;
+          }
+        }
+      }
+    }
+  }
+}

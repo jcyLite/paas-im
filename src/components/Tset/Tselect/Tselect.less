@@ -1,0 +1,95 @@
+.tk-flex-right {
+  position: relative;
+  :global {
+    .name-container {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .header-icon {
+      display: inline-block;
+      width: 40px;
+      text-align: center;
+      line-height: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #ddd;
+    }
+    .back {
+      position: absolute;
+      left: 10px;
+      top: 20px;
+      color: #000;
+      width: 30px;
+      height: 30px;
+      font-size: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .tk-flex-right-title {
+      margin-left: 20px;
+      color: #111f2c;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .nav {
+      .nav-item {
+        font-size: 12px;
+        color: #111f2c;
+        display: inline-block;
+        cursor: pointer;
+        &:hover {
+          color: #0089ff;
+        }
+        &:last-child {
+          color: #caced0;
+          cursor: not-allowed;
+        }
+      }
+    }
+    .tk-flex-right-list {
+      height: calc(100% - 30px);
+      overflow-y: scroll;
+      font-size: 14px;
+      .tk-select {
+        margin-top: 15px;
+        vertical-align: middle;
+        .tk-select-circle {
+          vertical-align: middle;
+          display: inline-block;
+          border: 1px solid #ddd;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          box-sizing: border-box;
+          transition: 0.3s all;
+          &.select {
+            background: #0089ff;
+            border: none;
+          }
+        }
+        .tk-name {
+          display: inline-block;
+          vertical-align: middle;
+          width: calc(100% - 60px);
+
+          .dept {
+            cursor: pointer;
+            float: right;
+            margin-top: -0.3px;
+            color: #a5abaf;
+            &.disable {
+              cursor: not-allowed;
+              color: #a5abaf;
+              &:hover {
+                color: #a5abaf;
+              }
+            }
+            &:hover {
+              color: #0089ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

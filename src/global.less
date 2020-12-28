@@ -1,0 +1,32 @@
+@import './antd.reset.less';
+@import './layim.reset.less';
+.topRight {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  width: 0px;
+  height: 200px;
+  background: rgba(194, 194, 194, 1);
+  border-radius: 100px;
+}
+@font-face {
+  font-family: 'layui-icon';
+  src: url('~./font/iconfont.eot?v=230');
+  src: url('~./font/iconfont.eot?v=230#iefix') format('embedded-opentype'),
+    url('~./font/iconfont.svg?v=230#iconfont') format('svg'),
+    url('~./font/iconfont.woff?v=230') format('woff'),
+    url('~./font/iconfont.ttf?v=230') format('truetype');
+}
+.layui-icon {
+  font-family: 'layui-icon' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

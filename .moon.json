@@ -1,0 +1,8 @@
+{
+  "type": "h5-redux",
+  "api": {
+    "swaggerUrls": ["http://172.24.215.9:8881/v2/api-docs"],
+    "wrapper": "data",
+    "dir": "./src/api/"
+  }
+}

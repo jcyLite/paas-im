@@ -1,0 +1,32 @@
+.wrapper {
+  height: 100%;
+  width: calc(100vw - 600px);
+  max-width: 800px;
+  min-width: 500px;
+  :global {
+    .title {
+      padding: 14px;
+      height: 50px;
+      box-shadow: 0px 1px 0px 0px rgba(193, 199, 226, 0.5);
+    }
+    .msg-box {
+      background: rgba(241, 243, 247, 1);
+      height: 60%;
+      border-bottom: 1px solid #ddd;
+      overflow-y: scroll;
+    }
+    .send-panel {
+      height: calc(40% - 50px);
+      position: relative;
+      > .textarea {
+        width: 100%;
+        height: calc(100% - 30px);
+      }
+      button {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+      }
+    }
+  }
+}

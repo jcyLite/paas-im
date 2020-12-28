@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "clean": "rimraf node_modules && yarn",
+    "i": "yarn install && cd ./src && npm i",
+    "build": "umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@paas/cos-h5": "^0.0.0-alpha.4",
+    "@paas/library": "^0.0.1-alpha.100",
+    "@umijs/plugin-qiankun": "^2.2.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.2.2",
+    "aws-sdk": "^2.687.0",
+    "axios": "^0.19.2",
+    "babel-plugin-react-directives": "^1.1.1",
+    "cos-js-sdk-v5": "^0.5.26",
+    "draft-js": "^0.11.6",
+    "html2canvas": "^1.0.0-rc.5",
+    "lint-staged": "^10.0.7",
+    "node-uuid": "^1.4.8",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "sqlite3": "^4.2.0",
+    "umi": "^3.2.2",
+    "umi-plugin-server": "^0.0.2-alpha.11",
+    "webpage": "^0.3.0",
+    "yorkie": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node-uuid": "0.0.28"
+  }
+}
