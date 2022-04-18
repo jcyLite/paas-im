@@ -59,7 +59,7 @@ export default function(props: any) {
           <div className="header-left">
             <MenuOutlined />
             <Select defaultValue="0" style={{ width: 250 }} bordered={false}>
-              <Option value="0">南京云帐房网络科技有限公司</Option>
+              <Option value="0">121212</Option>
               <Option value="1">公司2</Option>
               <Option value="2">公司3</Option>
             </Select>
